@@ -63,9 +63,9 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `name`, `email`, `password`) VALUES
-(1, 'abcdfff', '', ''),
 (1, 'a', 'abc@gmail.com', '$2b$10$UXZ2ua.xk/1gmMsYgWJ.meUDPFS0jKdUNgGYMOllfwjjInGZbjcY2');
-
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
 -- --------------------------------------------------------
 
 --

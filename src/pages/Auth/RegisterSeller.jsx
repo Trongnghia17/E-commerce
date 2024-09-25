@@ -7,7 +7,7 @@ import {
     authRegisterCustomerCreator,
     authRegisterSellerCreator,
 } from "../../redux/actions/auth";
-import corpName from "../../assets/img/logo.png";
+import corpName from "../../assets/img/logoShopee.png";
 import classname from "../../helpers/classJoiner";
 import styles from "./styles.module.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -45,7 +45,7 @@ const Login = (props) => {
                         src={corpName}
                     />
                     <p className={classname(styles.desc)}>
-                        Please sign up with your seller account
+                        Vui lòng đăng ký bằng tài khoản người bán của bạn
 						</p>
                     <div className={classname(styles.userType)}>
                         <button
@@ -61,7 +61,7 @@ const Login = (props) => {
                                 className={classname(styles.bla)}
                                 to="/RegisterCustomer"
                             >
-                                Customer
+                                Khách hàng
 
 						</Link>
                         </button>
@@ -70,7 +70,7 @@ const Login = (props) => {
                                 styles.userTypeBtnSellerActive
                             )}
                         >
-                            Seller
+                            Người bán
                         </button>
 
                     </div>
@@ -104,7 +104,7 @@ const Login = (props) => {
                                     required: "Required",
                                     pattern: {
                                         value: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
-                                        message: "Wrong email format",
+                                        message: "Định dạng email không đúng",
                                     },
                                 })}
                                 type="email"
@@ -125,7 +125,7 @@ const Login = (props) => {
                                     required: "Required",
                                     pattern: {
                                         value: /^\s*[+-]?(\d+|\.\d+|\d+\.\d+|\d+\.)(e[+-]?\d+)?\s*$/,
-                                        message: "Wrong phone number format",
+                                        message: "Định dạng số điện thoại không đúng",
                                     },
                                 })}
                                 type="text"
@@ -165,7 +165,8 @@ const Login = (props) => {
                                 ref={register({
                                     required: "Required", pattern: {
                                         value: /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,}$/,
-                                        message: "Password must contain at least 1 number, an uppercase letter and more than 8 characters"
+                                        message: "\n" +
+                                            "Mật khẩu phải chứa ít nhất 1 số, chữ in hoa và nhiều hơn 8 ký tự"
                                     }
                                 })}
                             />
@@ -178,19 +179,19 @@ const Login = (props) => {
                             className={classname(styles.loginSubmit)}
                             type="submit"
                         >
-                            Submit
+                            Đăng ký
 							</button>
                     </form>
                 </form>
                 <div className={classname(styles.signUpBtn)}>
                     <p>
-                        Already have a Tokopedia account?{" "}
+                        Bạn đã có tài khoản?{" "}
                         <span onClick={() => { }}>
                             <Link
                                 className={classname(styles.bla)}
                                 to="/login"
                             >
-                                Login
+                              Đăng nhập
 								</Link>
                         </span>
                     </p>

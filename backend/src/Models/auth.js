@@ -153,7 +153,7 @@ const authModel = {
               }
             });
           } else {
-            const msg = "Invalid email or password";
+            const msg = "Email hoặc mật khẩu không hợp lệ";
             reject({ msg, err });
           }
         } else {
@@ -205,7 +205,7 @@ const authModel = {
               }
             });
           } else {
-            const msg = "Invalid email or password";
+            const msg = "Email hoặc mật khẩu không hợp lệ";
             reject({ msg, err });
           }
         } else {
@@ -257,7 +257,7 @@ const authModel = {
               }
             });
           } else {
-            const msg = "Invalid email or password";
+            const msg = "Email hoặc mật khẩu không hợp lệ";
             reject({ msg, err });
           }
         } else {

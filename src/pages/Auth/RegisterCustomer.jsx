@@ -7,7 +7,7 @@ import {
 	authRegisterCustomerCreator,
 	authRegisterSellerCreator,
 } from "../../redux/actions/auth";
-import corpName from "../../assets/img/logo.png";
+import corpName from "../../assets/img/logoShopee.png";
 import classname from "../../helpers/classJoiner";
 import styles from "./styles.module.css";
 import { useDispatch, useSelector } from "react-redux";
@@ -44,7 +44,7 @@ const Login = (props) => {
 					src={corpName}
 				/>
 				<p className={classname(styles.desc)}>
-					Please sign up with your account
+					Vui lòng đăng ký bằng tài khoản của bạn
 						</p>
 				<div className={classname(styles.userType)}>
 					<button
@@ -52,7 +52,7 @@ const Login = (props) => {
 							styles.userTypeBtnCustomerActive
 						)}
 					>
-						Customer
+						Khách hàng
 						</button>
 
 					<button
@@ -66,7 +66,7 @@ const Login = (props) => {
 							className={classname(styles.bla)}
 							to="/RegisterSeller"
 						>
-							Seller
+							Người bán
 
 						</Link>
 
@@ -100,7 +100,7 @@ const Login = (props) => {
 								required: "Required",
 								pattern: {
 									value: /^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/,
-									message: "Wrong email format",
+									message: "Email không đúng định dạng",
 								},
 							})}
 							type="email"
@@ -121,7 +121,7 @@ const Login = (props) => {
 							ref={register({
 								required: "Required", pattern: {
 									value: /^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{8,}$/,
-									message: "Password must contain at least 1 number, an uppercase letter and more than 8 characters"
+									message: "Mật khẩu phải chứa ít nhất 1 số, chữ in hoa và nhiều hơn 8 ký tự"
 								}
 							})}
 						/>
@@ -133,16 +133,16 @@ const Login = (props) => {
 						className={classname(styles.loginSubmit)}
 						type="submit"
 					>
-						Submit
+						Đăng ký
 							</button>
 				</form>
 			</form>
 			<div className={classname(styles.signUpBtn)}>
 				<p>
-					Already have a Tokopedia account?{" "}
+					Bạn đã có tài khoản ?{" "}
 					<span onClick={() => { }}>
 						<Link className={classname(styles.bla)} to="/login">
-							Login
+							Đăng nhập
 								</Link>
 					</span>
 				</p>
