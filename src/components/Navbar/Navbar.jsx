@@ -7,7 +7,7 @@ import SearchBar from "../SearchBar/SearchBar";
 import text from "../../assets/text.module.css";
 import colors from "../../assets/colors.module.css";
 import classname from "../../helpers/classJoiner";
-import logo from "../../assets/img/logo.png";
+import logo from "../../assets/img/logoShopee.png";
 import filter from "../../assets/img/filter.png";
 import cart from "../../assets/img/cart.png";
 import notification from "../../assets/img/bell.png";
@@ -120,7 +120,7 @@ const Navbar = (props) => {
 								props.history.push("/login");
 							}}
 						>
-							Login
+							Đăng nhập
 						</button>
 						<button
 							className={classname(
@@ -132,7 +132,7 @@ const Navbar = (props) => {
 								props.history.push("/RegisterCustomer");
 							}}
 						>
-							Signup
+							Đăng ký
 						</button>
 					</div>
 				)}

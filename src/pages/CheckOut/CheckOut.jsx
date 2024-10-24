@@ -44,7 +44,7 @@ const CheckOut = (props) => {
 
    const joinedAdrress = `${stateAuth.address}, ${stateAuth.city_of_subdistrict}, ${stateAuth.postal_code}, ${stateAuth.recipient_telp_number}`;
 
-   
+
 
    useEffect(() => {
       document.title = "Checkout | Blanja";
@@ -75,18 +75,18 @@ const CheckOut = (props) => {
    return (
       <div className="container-main">
          <div className="container-title">
-            <h1 className={classname(text.headline, "headline")}>Checkout</h1>
+            <h1 className={classname(text.headline, "headline")}>Thanh toán</h1>
          </div>
          {stateCarts.filter(item => item.selected === true).length ? (
             <div className="row">
                {/* left item */}
                <div className="col-lg-7">
-                  <h4 className={classname(text.text, "text-title")}>Shipping Adress</h4>
+                  <h4 className={classname(text.text, "text-title")}>Địa chỉ giao hàng</h4>
                   <div className="row no-gutters shadow align-content-center container-select-all">
                      <div className="col">
                         <p className={classname(text.text, "text-title")}>{stateAuth.recipient_name}</p>
                         <p className="text-addres mb-4">{joinedAdrress}</p>
-                        <button type="button" className={classname(colors.grayText, "btn btn-outline-secondary btn-choose-address")} onClick={() => setShowChooseAddress(true)}>Choose another address</button>
+                        <button type="button" className={classname(colors.grayText, "btn btn-outline-secondary btn-choose-address")} onClick={() => setShowChooseAddress(true)}>Chọn địa chỉ khác</button>
                      </div>
                   </div>
 
@@ -114,11 +114,11 @@ const CheckOut = (props) => {
                {/* right item */}
                <div className="col-lg-4 shadow container-summary ml-lg-auto">
                   <div>
-                     <p className={classname(text.text, "text-title mb-5")}>Shopping summary</p>
+                     <p className={classname(text.text, "text-title mb-5")}>Tóm tắt mua sắm</p>
                      <div className="row no-gutters mb-4 align-items-center order-deliv">
                         <div className="col">
-                           <p className={classname(text.text, colors.grayText, "text-title")}>Order</p>
-                           <p className={classname(text.text, colors.grayText, "text-title")}>Delivery</p>
+                           <p className={classname(text.text, colors.grayText, "text-title")}>Phí hàng</p>
+                           <p className={classname(text.text, colors.grayText, "text-title")}>Vận chuyển</p>
                         </div>
                         <div className="col">
                            <p className={classname(text.headline3, "text-title text-right")}>{`${stateCarts.filter(item => item.selected === true).reduce((total, item) => { return total + (item.price * item.qty) }, 0).toLocaleString('id-ID')}VND`}</p>
@@ -127,13 +127,13 @@ const CheckOut = (props) => {
                      </div>
                      <div className="row">
                         <div className="col">
-                           <p className={classname(text.text, "text-title mb-5")}>Shopping summary</p>
+                           <p className={classname(text.text, "text-title mb-5")}>Tóm tắt mua sắm</p>
                         </div>
                         <div className="col">
                            <p className={classname(text.headline3, colors.primaryText, "text-title text-right")}>{`${stateCarts.filter(item => item.selected === true).reduce((total, item) => { return total + (item.price * item.qty) }, 5000).toLocaleString('id-ID')}VND`}</p>
                         </div>
                      </div>
-                     <button className={classname("btn btn-danger btn-buy", colors.primary)} onClick={() => setShowPayment(true)}>Select payment</button>
+                     <button className={classname("btn btn-danger btn-buy", colors.primary)} onClick={() => setShowPayment(true)}>Lựa chọn phương thức thanh toán</button>
                   </div>
                </div>
             </div>

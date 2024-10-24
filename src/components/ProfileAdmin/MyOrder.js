@@ -14,7 +14,7 @@ export default function MyOrder() {
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
-        <h6 className={styles.title}>All order</h6>
+        <h6 className={styles.title}>Tất cả</h6>
       </div>
       <div className={styles.content}>
         <div className={styles.search}>
@@ -34,16 +34,16 @@ export default function MyOrder() {
                   <tr>
                     <th style={{ width: "10%" }}>No.</th>
                     <th style={{ width: "20%" }}>
-                      Invoice <img src={sort} />{" "}
+                      Hóa đơn <img src={sort} />{" "}
                     </th>
                     <th style={{ width: "25%" }}>
-                      Customer <img src={sort} />
+                      Khách hàng <img src={sort} />
                     </th>
                     <th style={{ width: "20%", textAlign: "center" }}>
-                      Total <img src={sort} />
+                      Giá <img src={sort} />
                     </th>
                     <th style={{ width: "25%", textAlign: "center" }}>
-                      Dates <img src={sort} />
+                      Ngày <img src={sort} />
                     </th>
                   </tr>
                 </thead>

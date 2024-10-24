@@ -55,12 +55,12 @@ export default function ModalAddAddress(props) {
         <Modal.Title id='contained-modal-title-vcenter'></Modal.Title>
       </Modal.Header>
       <Modal.Body className={styles.container}>
-        <h4 className={styles.title}>Add new address</h4>
+        <h4 className={styles.title}>Thêm địa chỉ mới</h4>
         <div className={styles.content}>
           <div className={styles.iteminput}>
             <div className={styles.contentinput}>
               <label className={styles.label} for='address'>
-                Save address as (ex : home address, office address)
+                lưu địa chỉ dưới dạng (ví dụ: địa chỉ nhà, địa chỉ văn phòng)
               </label>
               <input
                 id='address'
@@ -75,7 +75,7 @@ export default function ModalAddAddress(props) {
           <div className={styles.iteminput}>
             <div className={styles.contentinput}>
               <label className={styles.label} for='recipients'>
-                Recipient’s name
+                Tên người nhận
               </label>
               <input
                 id='recipients'
@@ -88,7 +88,7 @@ export default function ModalAddAddress(props) {
             <div className={styles.space}></div>
             <div className={styles.contentinput}>
               <label className={styles.label} for='tlp'>
-                Recipient's telephone number
+              Số điện thoại người nhận
               </label>
               <input
                 id='tlp'
@@ -103,7 +103,7 @@ export default function ModalAddAddress(props) {
           <div className={styles.iteminput}>
             <div className={styles.contentinput}>
               <label className={styles.label} for='address'>
-                Address
+                Địa chỉ
               </label>
               <input
                 id='address'
@@ -116,7 +116,7 @@ export default function ModalAddAddress(props) {
             <div className={styles.space}></div>
             <div className={styles.contentinput}>
               <label className={styles.label} for='postal'>
-                Postal code
+                Mã bưu chính
               </label>
               <input
                 id='postal'
@@ -131,7 +131,7 @@ export default function ModalAddAddress(props) {
           <div className={styles.iteminput}>
             <div className={styles.contentinput}>
               <label className={styles.label} for='city'>
-                City or subdistrict
+                Thành phố
               </label>
               <input
                 id='city'
@@ -156,7 +156,7 @@ export default function ModalAddAddress(props) {
               }}
             />
             <label className={styles.label} for='primary'>
-              Make it primary addres
+            Mặc định nó là địa chỉ chính
             </label>
           </div>
           <div className={styles.iteminput}>
@@ -164,7 +164,7 @@ export default function ModalAddAddress(props) {
             <div className={styles.space}></div>
             <div className={styles.contentbtn}>
               <button onClick={props.onHide} className={styles.btncancel}>
-                Cancel
+                Hủy
               </button>
               <button
                 onClick={(e) => handleSubmit(e)}
@@ -172,7 +172,7 @@ export default function ModalAddAddress(props) {
                 {isAddAddressPending ? (
                   <i className='fa fa-spinner fa-spin fa-2x fa-fw'></i>
                 ) : (
-                  "Save"
+                  "Lưu"
                 )}
               </button>
             </div>

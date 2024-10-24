@@ -93,7 +93,7 @@ export default function LeftBar(props) {
                     ? styles.active
                     : styles.inactive
                 }>
-                Customer
+                Khách hàng
               </p>
             </Accordion.Toggle>
           </Card>
@@ -136,7 +136,7 @@ export default function LeftBar(props) {
                     ? styles.active
                     : styles.inactive
                 }>
-                Seller
+               Nhân viên Seller
               </p>
             </Accordion.Toggle>
           </Card>
@@ -179,7 +179,7 @@ export default function LeftBar(props) {
                     ? styles.active
                     : styles.inactive
                 }>
-                Product
+                Sản phẩm
               </p>
             </Accordion.Toggle>
           </Card>
@@ -223,7 +223,7 @@ export default function LeftBar(props) {
                     ? styles.active
                     : styles.inactive
                 }>
-                Order
+                Đơn hàng
               </p>
             </Accordion.Toggle>
             <Accordion.Collapse eventKey='2'>
@@ -247,7 +247,8 @@ export default function LeftBar(props) {
           onShow();
         }}
         className={styles.btnsave}>
-        Logout
+          Đăng xuất
+
       </button>
     </div>
   );

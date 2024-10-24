@@ -14,9 +14,9 @@ export default function MyProduct() {
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
-        <h6 className={styles.title}>Product</h6>
+        <h6 className={styles.title}>Sản phẩm</h6>
         <div className={styles.menu}>
-          <h3 className={styles.menuactive}>All items</h3>
+          <h3 className={styles.menuactive}>Tất cả</h3>
         </div>
       </div>
       <div className={styles.content}>
@@ -35,13 +35,13 @@ export default function MyProduct() {
               className={styles.headertable}>
               <tr>
                 <th style={{ width: "70%" }}>
-                  Product name <img src={sort} />{" "}
+                  Tên sản phẩm <img src={sort} />{" "}
                 </th>
                 <th style={{ width: "15%" }}>
-                  Price <img src={sort} />
+                  Giá <img src={sort} />
                 </th>
                 <th style={{ width: "15%", textAlign: "center" }}>
-                  Stock <img src={sort} />
+                  Tồn kho <img src={sort} />
                 </th>
               </tr>
             </thead>

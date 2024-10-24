@@ -87,7 +87,7 @@ const MyBag = () => {
 		const sendData = {
 			id: invoice,
 			customer_id: stateAuth.id,
-			
+
 			seller_id: stateCarts.filter((item) => item.selected === true)[0]
 				.seller_id,
 			amount: stateCarts
@@ -123,7 +123,7 @@ const MyBag = () => {
 	return (
 		<div className="container-main">
 			<div className="container-title">
-				<h1 className={classname(text.headline, "headline")}>My bag</h1>
+				<h1 className={classname(text.headline, "headline")}>Giỏ hàng</h1>
 			</div>
 			{stateCarts.length ? (
 				<div className="row">
@@ -143,7 +143,7 @@ const MyBag = () => {
 										text.text,
 										"text-title"
 									)}
-								>{`Select all item (${stateCarts.filter(item => item.selected === true).length} items selected)`}</p>
+								>{`Lựa chọn sản phẩm: (${stateCarts.filter(item => item.selected === true).length} sản phẩm)`}</p>
 							</div>
 							<div className="col-1">
 								<a
@@ -155,7 +155,7 @@ const MyBag = () => {
 									)}
 									onClick={handleDeleteCart}
 								>
-									Delete
+									Xóa
 								</a>
 							</div>
 						</div>
@@ -273,7 +273,7 @@ const MyBag = () => {
 									"text-title mb-5"
 								)}
 							>
-								Shopping summary
+								Tóm tắt mua sắm
 							</p>
 							<div className="row no-gutters mb-5 align-items-center">
 								<div className="col">
@@ -284,7 +284,7 @@ const MyBag = () => {
 											"text-title"
 										)}
 									>
-										Total Price
+										Tổng giá
 									</p>
 								</div>
 								<div className="col">
@@ -294,7 +294,7 @@ const MyBag = () => {
 											"text-title text-right"
 										)}
 									>
-										
+
 										{stateCarts
 											.filter(
 												(item) => item.selected === true
@@ -326,7 +326,7 @@ const MyBag = () => {
 											)}
 											onClick={kirim}
 										>
-											Buy
+											Mua
 									</button>
 									</Link>
 								) : (
@@ -337,7 +337,7 @@ const MyBag = () => {
 										)}
 										onClick={() => setShowAlert(true)}
 									>
-										Buy
+										Mua
 									</button>
 								)}
 						</div>
@@ -384,7 +384,7 @@ const MyBag = () => {
 							"text-empty-cart"
 						)}
 					>
-						(My bag is empty)
+						(Giỏ hàng đang bị trống)
 					</h1>
 				)}
 		</div>

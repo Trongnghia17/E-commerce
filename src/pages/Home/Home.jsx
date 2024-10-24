@@ -39,14 +39,14 @@ const Home = (props) => {
 				/>
 			</div>
 			<div style={{ marginBottom: "50px" }}>
-				<h1 className={text.headline}>Category</h1>
+				<h1 className={text.headline}>Thể loại</h1>
 				<p
 					className={classname(
 						text.helperText,
 						styles.marginbottom30
 					)}
 				>
-					What are you currently looking for
+					Bạn muốn tìm kiếm điều gì?
 				</p>
 				<Carousel
 					key="2"
@@ -56,9 +56,9 @@ const Home = (props) => {
 				/>
 			</div>
 			<div>
-				<h1 className={text.headline}>New</h1>
+				<h1 className={text.headline}>Mới</h1>
 				<p className={classname(text.helperText, styles.marginbottom30)}>
-					You’ve never seen it before!
+					Bạn chưa bao giờ nhìn thấy nó trước đây!
 				</p>
 				<div className="w-100">
 					<div
@@ -79,9 +79,9 @@ const Home = (props) => {
 						})}
 					</div>
 				</div>
-				<h1 className={text.headline}>Popular</h1>
+				<h1 className={text.headline}>Phổ biến</h1>
 				<p className={classname(text.helperText, styles.marginbottom30)}>
-					Find clothes that are trending recently
+					Tìm kiếm sản phẩm phổ biến!
 				</p>
 				<div className="w-100">
 					<div

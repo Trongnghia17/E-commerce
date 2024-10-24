@@ -14,7 +14,7 @@ export default function AdminSeller() {
     <div className={styles.container}>
       {/* Header */}
       <div className={styles.header}>
-        <h6 className={styles.title}>Customer</h6>
+        <h6 className={styles.title}>Nhân viên sales</h6>
       </div>
       <div className={styles.content}>
         <div className={styles.search}>
@@ -35,10 +35,10 @@ export default function AdminSeller() {
                   Email <img src={sort} />{" "}
                 </th>
                 <th style={{ width: "15%" }}>
-                  Name <img src={sort} />
+                  Tên <img src={sort} />
                 </th>
                 <th style={{ width: "15%", textAlign: "center" }}>
-                  Password <img src={sort} />
+                  Mật khẩu <img src={sort} />
                 </th>
               </tr>
             </thead>

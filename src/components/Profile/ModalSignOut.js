@@ -34,7 +34,7 @@ export default function ModalSignOut(props) {
             }}
             style={{ alignSelf: "flex-end", marginTop: "20px" }}
             className={styles.btnsave}>
-            Logout
+              Đăng xuất
           </button>
         </div>
       </Modal.Body>

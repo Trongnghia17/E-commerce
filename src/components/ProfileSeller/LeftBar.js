@@ -303,7 +303,7 @@ export default function LeftBar(props) {
           onShow();
         }}
         className={styles.btnsave}>
-        Logout
+        Đăng xuất
       </button>
     </div>
   );

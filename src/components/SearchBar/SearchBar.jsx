@@ -8,7 +8,7 @@ const SearchBar = (props) => {
 	return (
 		<div className={styles.searchContainer}>
 			<input
-				placeholder="Search"
+				placeholder="Tìm kiếm"
 				className={styles.searchInput}
 				ref={props.refProp}
 				onKeyPress={props.onKeyPress}

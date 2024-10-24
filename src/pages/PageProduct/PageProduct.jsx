@@ -192,7 +192,7 @@ const PageProduct = (props) => {
 									marginTop: 31.29,
 								}}
 							>
-								Price
+								Giá
 							</p>
 							<p
 								style={{
@@ -201,7 +201,7 @@ const PageProduct = (props) => {
 									marginTop: 10,
 								}}
 							>
-								
+
 								{Number(
 									stateProductDetail.price
 								).toLocaleString("id-ID")} VND
@@ -213,7 +213,7 @@ const PageProduct = (props) => {
 									marginTop: 10,
 								}}
 							>
-								color
+								Màu sắc
 							</p>
 							<div className={classname(styles.colorContainer)}>
 								<button
@@ -344,7 +344,7 @@ const PageProduct = (props) => {
 										);
 									}}
 								>
-									chat
+									Nhắn tin
 								</button>
 								{index >= 0 ? (
 									<button
@@ -354,7 +354,7 @@ const PageProduct = (props) => {
 										}}
 										className={classname(styles.chatAddBtn)}
 									>
-										item already in bag
+										đã thêm vào giỏ hàng
 									</button>
 								) : (
 									<button
@@ -383,7 +383,7 @@ const PageProduct = (props) => {
 											)
 										}
 									>
-										add bag
+										Thêm vào giỏ hàng
 									</button>
 								)}
 
@@ -391,14 +391,14 @@ const PageProduct = (props) => {
 									className={classname(styles.buyBtn)}
 									onClick={kirim}
 								>
-									buy now
+									Mua ngay
 								</button>
 							</div>
 						</div>
 					</div>
 					<div style={{ marginTop: 38 }}>
 						<p style={{ fontSize: 28, fontWeight: 600 }}>
-							Product Information
+							Thông tin sản phẩm
 						</p>
 						<p
 							style={{
@@ -407,7 +407,7 @@ const PageProduct = (props) => {
 								fontWeight: 600,
 							}}
 						>
-							Condition
+							Tình trạng
 						</p>
 						<p
 							style={{
@@ -426,7 +426,7 @@ const PageProduct = (props) => {
 								fontWeight: 600,
 							}}
 						>
-							Description
+							Mô tả
 						</p>
 						<p
 							style={{
@@ -444,7 +444,7 @@ const PageProduct = (props) => {
 								marginTop: 50,
 							}}
 						>
-							Product review
+							Đánh giá sản phẩm
 						</p>
 					</div>
 					<div
@@ -632,10 +632,10 @@ const PageProduct = (props) => {
 					<hr style={{ marginTop: 51.29, borderColor: "black" }} />
 					<div style={{ marginTop: 50 }}>
 						<p style={{ fontSize: 34, fontWeight: 700 }}>
-							You can also like this
+							Những sản phẩm khác tương tự
 						</p>
 						<p style={{ fontSize: 12 }}>
-							You've never seen it before
+							Bạn có thể chưa có sản phẩm này
 						</p>
 						<div
 							className={classname(

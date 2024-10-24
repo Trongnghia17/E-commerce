@@ -66,7 +66,7 @@ export default function AnotherAddress(props) {
         <div className={styles.addresscontainer}>
           <div className={styles.addnewaddress}>
             <h5 className={styles.addtext} onClick={props.onShow}>
-              Add new address
+              Thêm địa chỉ mới
             </h5>
           </div>
           {user.address ? (
